@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.app {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.question-container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.timer {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.option:hover {
+  background-color: #45a049;
+}
+
+.option.selected {
+  background-color: #2196f3;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+button#start {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button#start:hover {
+  background-color: #45a049;
+}
+
+.score-container {
+  margin-top: 20px;
+}
+
+.question-container img {
+  max-height: 400px; /* Resimlerin maksimum yüksekliği */
+  margin-bottom: 20px; /* Soru ile resim arasındaki boşluk */
+}
+
+.question-container h2 {
+  font-size: 24px; /* Soru yazısının font büyüklüğü */
+}
