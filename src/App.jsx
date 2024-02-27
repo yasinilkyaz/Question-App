@@ -31,7 +31,7 @@ function App() {
   useEffect(() => {
     if (timer === 20) {
       setShowOptions(true);
-    } else if (timer === 0 && !isAnswered) {
+    } else if (timer === 0 ) {
       handleNextQuestion();
     }
   }, [timer, isAnswered]);
