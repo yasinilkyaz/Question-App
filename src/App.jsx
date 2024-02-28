@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import questions from './questions'; // questions.js dosyasını dahil edin
+import questions from './questions';
 
 function App() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -11,8 +11,7 @@ function App() {
   const [wrongAnswers, setWrongAnswers] = useState(0);
   const [timer, setTimer] = useState(30);
   const [quizStarted, setQuizStarted] = useState(false);
-  const [showResults, setShowResults] = useState(false); // Sonuçların gösterilip gösterilmeyeceğini izleyen durum
-
+  const [showResults, setShowResults] = useState(false); 
   useEffect(() => {
     if (quizStarted) {
       const interval = setInterval(() => {
@@ -20,7 +19,7 @@ function App() {
           if (prevTimer > 0) {
             return prevTimer - 1;
           } else {
-            return 0; // Negatif sayıya düşmesini önle
+            return 0; 
           }
         });
       }, 1000);
@@ -57,13 +56,13 @@ function App() {
       setIsAnswered(false);
       setTimer(30);
     } else {
-      setShowResults(true); // Son soruda sonuçları göster
+      setShowResults(true);
     }
   };
 
   const handleStartQuiz = () => {
     setQuizStarted(true);
-    setTimer(30); // Test başladığında timer'ı 30 saniyeye ayarla
+    setTimer(30);
   };
 
   return (
