@@ -73,10 +73,11 @@ button#start:hover {
 }
 
 .question-container img {
-  max-height: 400px; /* Resimlerin maksimum yüksekliği */
-  margin-bottom: 20px; /* Soru ile resim arasındaki boşluk */
+  max-height: 400px;
+  margin-bottom: 20px; 
 }
 
 .question-container h2 {
-  font-size: 24px; /* Soru yazısının font büyüklüğü */
+  font-size: 24px;
 }
+
